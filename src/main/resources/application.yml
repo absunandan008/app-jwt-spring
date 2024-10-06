@@ -1,0 +1,19 @@
+server:
+  port : 8081
+
+management:
+  server:
+    port: 8082
+
+jwt:
+  secret: daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb
+  expiration: 86400000  # 24 hours in milliseconds
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        web: DEBUG
+    root: INFO
+    springbootjwt: DEBUG  # Replace with your actual package name
